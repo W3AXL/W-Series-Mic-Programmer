@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name MAX221CAE)(type Legacy)(uri ${KIPRJMOD}/MAX221CAE.lib)(options "")(descr ""))
+)
