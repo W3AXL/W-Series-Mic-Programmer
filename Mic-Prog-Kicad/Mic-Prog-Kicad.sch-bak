@@ -6,9 +6,9 @@ encoding utf-8
 Sheet 1 1
 Title "W-Series Mic Programmer"
 Date "2020-06-07"
-Rev ""
+Rev "A"
 Comp "W3AXL"
-Comment1 ""
+Comment1 "with help from K1YNE"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -558,32 +558,19 @@ $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 5EE88854
-P 7700 5000
-F 0 "R?" V 7504 5000 50  0000 C CNN
-F 1 "510" V 7595 5000 50  0000 C CNN
-F 2 "" H 7700 5000 50  0001 C CNN
-F 3 "~" H 7700 5000 50  0001 C CNN
-	1    7700 5000
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5EE8CBEF
-P 7300 5000
-F 0 "R?" V 7104 5000 50  0000 C CNN
-F 1 "510" V 7195 5000 50  0000 C CNN
-F 2 "" H 7300 5000 50  0001 C CNN
-F 3 "~" H 7300 5000 50  0001 C CNN
-	1    7300 5000
+P 7600 5000
+F 0 "R?" V 7404 5000 50  0000 C CNN
+F 1 "100" V 7495 5000 50  0000 C CNN
+F 2 "" H 7600 5000 50  0001 C CNN
+F 3 "~" H 7600 5000 50  0001 C CNN
+	1    7600 5000
 	0    1    1    0   
 $EndComp
 Text GLabel 7900 5000 2    50   Input ~ 0
 MIC_HI
 Wire Wire Line
 	7900 5000 7800 5000
-Wire Wire Line
-	7400 5000 7600 5000
-Text GLabel 7000 4750 1    50   Input ~ 0
+Text GLabel 7400 5000 0    50   Input ~ 0
 SWB
 $Comp
 L Device:D_Zener_Small D?
@@ -641,4 +628,33 @@ Wire Wire Line
 Connection ~ 4100 2950
 Wire Wire Line
 	4100 2950 4000 2950
+$Comp
+L Device:D_Zener_Small D?
+U 1 1 60AC4596
+P 7800 5200
+F 0 "D?" V 7754 5270 50  0000 L CNN
+F 1 "24V" V 7845 5270 50  0000 L CNN
+F 2 "" V 7800 5200 50  0001 C CNN
+F 3 "~" V 7800 5200 50  0001 C CNN
+	1    7800 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60AC91D0
+P 7800 5300
+F 0 "#PWR?" H 7800 5050 50  0001 C CNN
+F 1 "GND" H 7805 5127 50  0001 C CNN
+F 2 "" H 7800 5300 50  0001 C CNN
+F 3 "" H 7800 5300 50  0001 C CNN
+	1    7800 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 5000 7800 5100
+Wire Wire Line
+	7500 5000 7400 5000
+Wire Wire Line
+	7700 5000 7800 5000
+Connection ~ 7800 5000
 $EndSCHEMATC
